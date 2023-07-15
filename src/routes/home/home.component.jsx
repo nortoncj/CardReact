@@ -1,5 +1,6 @@
 import "../../index.styles.scss";
 import Directory from "../../components/categories/directory.component";
+import Main from "../../components/main-index/mainpage";
 import { Outlet } from "react-router-dom";
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
 
   return (
     <>
+      <Main />
       <Directory categories={categories} />
     </>
   );

@@ -74,13 +74,16 @@
 
 .nav-cart {
   position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 .cartAmount {
   position: absolute;
   top: -5px;
   right: -6px;
   font-size: 12px;
-
+  background: transparent;
   color: var(--rome);
   padding: 2px;
   border-radius: 5px;
@@ -137,6 +140,9 @@
   cursor: pointer;
   padding-left: 20px;
   display: none;
+  z-index: 5;
+  border: none;
+  background: transparent;
 }
 
 /* TABLET */
@@ -180,9 +186,12 @@
   }
 }
 /* The side navigation menu */
+.closesidenav {
+  width: 0; /* 0 width - change this with JavaScript */
+}
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+
   position: fixed; /* Stay in place */
   z-index: 30; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -192,6 +201,9 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s ease-in-out; /* 0.5 second transition effect to slide in the sidenav */
+}
+.openside nav {
+  width: 100%;
 }
 
 /* The navigation menu links */
@@ -218,6 +230,8 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  background: transparent;
+  border: none;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
